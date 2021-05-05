@@ -1,3 +1,4 @@
+import { StringNullableChain } from 'lodash';
 import { Action } from 'redux';
 
 export interface ProductState {
@@ -60,4 +61,5 @@ export class Product {
 export interface ProductFilter {
 	inStockOnly: boolean;
 	filterText: string;
+	filterId: string;
 }
